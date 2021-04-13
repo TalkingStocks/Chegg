@@ -1,0 +1,211 @@
+
+ .cartoon {
+ width: var(--p);
+ height: var(--p);
+
+ box-shadow:
+
+   var(--eye1),
+   var(--eye2),
+   var(--eyebrow1),
+   var(--eyebrow2);
+
+
+ --p: 4vmin;
+
+ --r: hsla(343, 0%, 46%, .6);
+ --s: hsl(43, 0%, 0%);
+ --t: hsl(33, 20%, 20%);
+ --w: hsl(43, 100%, 100%);
+
+ --eye-x-offset: calc(var(--p) * 7);
+
+ --pupil1-x: calc(var(--p) * 10);
+ --pupil2-x: calc(var(--pupil1-x) + var(--eye-x-offset));
+ --pupil1-y: calc(var(--p) * 12);
+ --pupil2-y: var(--pupil1-y);
+
+
+ --e1: calc(var(--p) * 10);
+ --e2: calc(var(--p) * 9);
+ --e3: calc(var(--p) * 8);
+ --e4: calc(var(--p) * 7);
+ --e5: calc(var(--p) * 7);
+ --e6: calc(var(--p) * 7);
+ --e7: calc(var(--p) * 7);
+ --e8: calc(var(--p) * 7);
+ --e9: calc(var(--p) * 8);
+ --e10: calc(var(--p) * 9);
+ --e11: calc(var(--p) * 10);
+ --e12: calc(var(--p) * 11);
+ --e13: calc(var(--p) * 11);
+ --e14: calc(var(--p) * 11);
+ --e15: calc(var(--p) * 11);
+ --e16: calc(var(--p) * 11);
+
+
+ --eye1: var(--e1) calc(var(--p) * 8) 0 var(--r),
+   var(--e2) calc(var(--p) * 8) 0 var(--r),
+   var(--e3) calc(var(--p) * 8) 0 var(--r),
+   var(--e4) calc(var(--p) * 9) 0 var(--r),
+   var(--e5) calc(var(--p) * 10) 0 var(--r),
+   var(--e6) calc(var(--p) * 11) 0 var(--r),
+   var(--e7) calc(var(--p) * 12) 0 var(--r),
+   var(--e8) calc(var(--p) * 13) 0 var(--r),
+   var(--e9) calc(var(--p) * 14) 0 var(--r),
+   var(--e10) calc(var(--p) * 14) 0 var(--r),
+   var(--e11) calc(var(--p) * 14) 0 var(--r),
+   var(--e12) calc(var(--p) * 13) 0 var(--r),
+   var(--e13) calc(var(--p) * 12) 0 var(--r),
+   var(--e14) calc(var(--p) * 11) 0 var(--r),
+   var(--e15) calc(var(--p) * 10) 0 var(--r),
+   var(--e16) calc(var(--p) * 9) 0 var(--r),
+   var(--pupil1-x) var(--pupil1-y) 0 var(--s),
+
+   calc(var(--p) * 9) calc(var(--p) * 10) 0 var(--p) var(--t),
+   calc(var(--p) * 9) calc(var(--p) * 12) 0 var(--p) var(--w);
+
+ --eye2: calc(var(--e1) + var(--eye-x-offset)) calc(var(--p) * 8) 0 var(--r),
+   calc(var(--e2) + var(--eye-x-offset)) calc(var(--p) * 8) 0 var(--r),
+   calc(var(--e3) + var(--eye-x-offset)) calc(var(--p) * 8) 0 var(--r),
+   calc(var(--e4) + var(--eye-x-offset)) calc(var(--p) * 9) 0 var(--r),
+   calc(var(--e5) + var(--eye-x-offset)) calc(var(--p) * 10) 0 var(--r),
+   calc(var(--e6) + var(--eye-x-offset)) calc(var(--p) * 11) 0 var(--r),
+   calc(var(--e7) + var(--eye-x-offset)) calc(var(--p) * 12) 0 var(--r),
+   calc(var(--e8) + var(--eye-x-offset)) calc(var(--p) * 13) 0 var(--r),
+   calc(var(--e9) + var(--eye-x-offset)) calc(var(--p) * 14) 0 var(--r),
+   calc(var(--e10) + var(--eye-x-offset)) calc(var(--p) * 14) 0 var(--r),
+   calc(var(--e11) + var(--eye-x-offset)) calc(var(--p) * 14) 0 var(--r),
+   calc(var(--e12) + var(--eye-x-offset)) calc(var(--p) * 13) 0 var(--r),
+   calc(var(--e13) + var(--eye-x-offset)) calc(var(--p) * 12) 0 var(--r),
+   calc(var(--e14) + var(--eye-x-offset)) calc(var(--p) * 11) 0 var(--r),
+   calc(var(--e15) + var(--eye-x-offset)) calc(var(--p) * 10) 0 var(--r),
+   calc(var(--e16) + var(--eye-x-offset)) calc(var(--p) * 9) 0 var(--r),
+   var(--pupil2-x) var(--pupil2-y) 0 var(--s),
+
+   calc(var(--p) * 9 + var(--eye-x-offset)) calc(var(--p) * 10) 0 var(--p) var(--t),
+   calc(var(--p) * 9 + var(--eye-x-offset)) calc(var(--p) * 12) 0 var(--p) var(--w);
+
+
+
+ --bx1: calc(var(--p) * 7);
+ --by1: calc(var(--p) * 6);
+
+ --eyebrow1:
+   calc(var(--bx1)) var(--by1) 0 var(--r),
+   calc(var(--bx1) + var(--p)) calc(var(--by1) - var(--p)) 0 var(--r),
+   calc(var(--bx1) + calc(var(--p) * 2)) calc(var(--by1) - var(--p)) 0 var(--r),
+   calc(var(--bx1) + calc(var(--p) * 3)) calc(var(--by1) - var(--p)) 0 var(--r),
+   calc(var(--bx1) + calc(var(--p) * 4)) var(--by1) 0 var(--r);
+
+ --eyebrow2: calc(var(--bx1) + var(--eye-x-offset)) var(--by2, var(--by1)) 0 var(--r),
+   calc(var(--bx1) + var(--eye-x-offset) + var(--p)) calc(var(--by2, var(--by1)) - var(--p)) 0 var(--r),
+   calc(var(--bx1) + var(--eye-x-offset) + calc(var(--p) * 2)) calc(var(--by2, var(--by1)) - var(--p)) 0 var(--r),
+   calc(var(--bx1) + var(--eye-x-offset) + calc(var(--p) * 3)) calc(var(--by2, var(--by1)) - var(--p)) 0 var(--r),
+   calc(var(--bx1) + var(--eye-x-offset) + calc(var(--p) * 4)) var(--by2, var(--by1)) 0 var(--r);
+
+ --glasses: calc(var(--p) * 4) calc(var(--p) * 11) 0 var(--r),
+   calc(var(--p) * 5) calc(var(--p) * 11) 0 var(--r),
+   calc(var(--p) * 6) calc(var(--p) * 11) 0 var(--r),
+
+   calc(var(--p) * 19) calc(var(--p) * 11) 0 var(--r),
+   calc(var(--p) * 20) calc(var(--p) * 11) 0 var(--r),
+   calc(var(--p) * 21) calc(var(--p) * 11) 0 var(--r),
+
+   calc(var(--p) * 12) calc(var(--p) * 10) 0 var(--r),
+   calc(var(--p) * 13) calc(var(--p) * 10) 0 var(--r);
+
+ --mouth:
+   calc(var(--p) * 10) calc(var(--p) * 19) 0 var(--r),
+   calc(var(--p) * 11) calc(var(--p) * 20) 0 var(--r),
+   calc(var(--p) * 12) calc(var(--p) * 20) 0 var(--r),
+   calc(var(--p) * 13) calc(var(--p) * 20) 0 var(--r),
+   calc(var(--p) * 14) calc(var(--p) * 20) 0 var(--r),
+   calc(var(--p) * 15) calc(var(--p) * 20) 0 var(--r);
+
+
+
+ animation: examine 1000ms infinite alternate linear,
+   question 1200ms infinite alternate linear;
+
+ transform: translate(calc(var(--p) * -12.5), calc(var(--p) * -12));
+ transform: translate(calc(var(--p) * -12.5), calc(var(--p) * -12)) rotateX(var(--x, 0deg)) rotateY(var(--y, 0deg));
+ transition: transform 1100ms ease-out;
+ transform-style: preserve-3d;
+}
+
+@keyframes examine {
+ 0%, 20% {
+   --pupil1-x: calc(var(--p) * 10);
+ }
+ 50% {
+   --pupil1-x: calc(var(--p) * 9);
+ }
+ 80%, 100% {
+   --pupil1-x: calc(var(--p) * 8);
+ }
+}
+@keyframes question {
+ 0%, 20% {
+   --by1: calc(var(--p) * 6);
+   --by2: calc(var(--p) * 6);
+ }
+ 50% {
+   --by1: calc(var(--p) * 7);
+   --by2: calc(var(--p) * 5);
+ }
+ 80%, 100% {
+   --by1: calc(var(--p) * 7);
+   --by2: calc(var(--p) * 4);
+ }
+}
+
+
+
+body {
+ height: 100vh;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ background: hsl(307, 90%, 98%);
+ background: radial-gradient(circle at 50% 60%, hsl(207, 90%, 82%), hsl(207, 100%, 88%));
+ perspective: 200px;
+}
+
+
+
+
+
+
+.cartoon{
+
+ position: absolute;
+ left: 0;
+ right: 0;
+ margin: auto;
+ top: 0;
+ bottom: 0;
+
+
+}
+
+body{
+  background-color: #554e6b;
+background-image: url("https://www.transparenttextures.com/patterns/asfalt-light.png");
+/* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
+}
+
+h2{
+  font-family: fantasy;
+  position: absolute;
+  top:14em;
+
+}
+
+
+@media only screen and (max-device-width:480px) {
+h2{
+  font-size: 5em;
+}
+
+}

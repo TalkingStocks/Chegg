@@ -1,0 +1,234 @@
+
+
+
+
+
+h1.ml8 {
+  font-weight: 900;
+  font-size: 4.5em;
+  color: #fff;
+  width: 3em;
+  height: 3em;
+}
+
+.ml8 .letters-container {
+  position: absolute;
+  left: 47%;
+  right: 0;
+  margin: auto;
+  top: 0;
+  bottom: 0;
+  height: 1em;
+}
+
+.ml8 .letters {
+  position: relative;
+  z-index: 2;
+  display: inline-block;
+  line-height: 0.8em;
+  right: -0.12em;
+  top: -0.2em;
+  color:black;
+}
+
+.ml8 .bang {
+  font-size: 1.4em;
+  top: auto;
+  left: -0.06em;
+}
+
+.ml8 .circle {
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: auto;
+  top: 0;
+  bottom: 0;
+
+}
+
+.ml8 .circle-white {
+  width: 3em;
+  height: 3em;
+  border: 2px dashed white;
+  border-radius: 2em;
+}
+
+.ml8 .circle-dark {
+  width: 2.2em;
+  height: 2.2em;
+  background-color: #4f7b86;
+  background-color:rgba(171, 183, 183, 0.5);
+  border-radius: 3em;
+  z-index: 1;
+}
+
+.ml8 .circle-dark-dashed {
+  border-radius: 2.4em;
+  background-color: transparent;
+  border: 2px dashed #4f7b86;
+  width: 2.3em;
+  height: 2.3em;
+}
+
+
+
+
+.ml9 {
+  position: relative;
+  font-weight: 200;
+  font-size: 4em;
+  text-align: center;
+}
+
+.ml9 .text-wrapper {
+  position: relative;
+  display: inline-block;
+  padding-top: 0.2em;
+  padding-right: 0.05em;
+  padding-bottom: 0.1em;
+  margin-left: 1em;
+  margin-top: 1em;
+  overflow: hidden;
+
+
+}
+
+.ml9 .success {
+  transform-origin: 50% 100%;
+  display: inline-block;
+  line-height: 1em;
+  font-family: fantasy;
+
+}
+
+.second{
+  margin-left: 1em;
+}
+
+
+
+
+body{
+  background-color: #554e6b;
+background-image: url("https://www.transparenttextures.com/patterns/asfalt-light.png");
+/* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
+}
+
+
+
+@media only screen and (max-device-width:480px) {
+  h1.ml8 {
+    font-weight: 900;
+    font-size: 5em;
+    color: #fff;
+    width: 3em;
+    height: 3em;
+  }
+
+  .ml8 .letters-container {
+    position: absolute;
+    left: 40%;
+    right: 0;
+    margin: auto;
+    top: 0;
+    bottom: 0;
+    height: 1em;
+  }
+
+  .ml8 .letters {
+    position: relative;
+    z-index: 2;
+    display: inline-block;
+    line-height: 0.8em;
+    right: -0.12em;
+    top: -0.2em;
+    color:black;
+    font-size: 3em;
+  }
+
+  .ml8 .bang {
+    font-size: 1.4em;
+    top: auto;
+    left: -0.06em;
+  }
+
+  .ml8 .circle {
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+    top: 0;
+    bottom: 0;
+
+  }
+
+  .ml8 .circle-white {
+    width: 4em;
+    height: 4em;
+    border: 2px dashed white;
+    border-radius: 10em;
+  }
+
+  .ml8 .circle-dark {
+    width: 7em;
+    height: 7em;
+    background-color: #4f7b86;
+    background-color:rgba(171, 183, 183, 0.5);
+    border-radius: 7em;
+    z-index: 1;
+  }
+
+  .ml8 .circle-dark-dashed {
+    border-radius: 5em;
+    background-color: transparent;
+    border: 7px dashed #4f7b86;
+    width: 7.5em;
+    height: 7.5em;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+  .ml9 {
+    position: relative;
+    font-weight: 150;
+    font-size: 4.4em;
+    text-align: center;
+  }
+
+  .ml9 .text-wrapper {
+    position: relative;
+    display: inline-block;
+    padding-top: 0.2em;
+    padding-right: 0.05em;
+    padding-bottom: 0.1em;
+    margin-left: 0.5em;
+    margin-top: 2em;
+    overflow: hidden;
+
+
+  }
+
+  .ml9 .success {
+    transform-origin: 50% 100%;
+    display: inline-block;
+    line-height: 1em;
+    font-family: fantasy;
+
+  }
+
+  .second{
+    margin-left: 1em;
+    margin-top: 8em;
+  }
+
+}

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+  <html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="height=device-height" />
+    <title>Talking Stocks</title>
+
+    <!-- CSS only-->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+<link rel="stylesheet" href="css/details.css">
+
+  <body>
+
+<h1>User Details</h1>
+
+
+    <div>
+      <table class="table table-striped">
+  <thead>
+    <tr>
+      <th scope="col">Time</th>
+      <th scope="col">Email</th>
+      <th scope="col">Count</th>
+      <th scope="col">Link</th>
+        <th scope="col">Answered/Not Answered</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row">09:30</th>
+      <td>ram.com</td>
+      <td>7</td>
+      <td>dfghdjfkbjlgdfsadfdghjklloLKXIUYYUTGHRDHJCBJHUIYUHRGJHKJCLKHHGXtyfdgfhiurhkj</td>
+      <td scope="col" class="not-answered" id="button"><p>Not Answered</p> </td>
+    </tr>
+    <tr>
+      <th scope="row">02:30</th>
+      <td>sham.com</td>
+      <td>7</td>
+      <td>dfghdjfkbjlgdfsadfdghjklloLKXIUYYUTGHRDHddfdghjcdjdhjkJCBJHUIYUHRGJHKJCLKHHGXtyfdgfhiurhkj</td>
+      <td scope="col" class="not-answered" id="button"><p>Not Answered</p> </td>
+    </tr>
+    <tr>
+      <th scope="row">06:30</th>
+      <td>raj.com</td>
+      <td>7</td>
+      <td>dfghdjfkbjlgdfsadfdghjygdhklfflgklloLKXIUYYUTGHRDHJCBJHUIYUHRGJHKJCLKHHGXtyfdgfhiurhkj</td>
+      <td scope="col" class="not-answered" id="button"><p>Not Answered</p> </td>
+    </tr>
+  </tbody>
+</table>
+
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script>
+$(".not-answered").css({"background-color": "red", "color": "white","cursor":"pointer"});
+
+$('.not-answered').click(function() {
+    $(this).css({
+        'background-color': 'green',
+        'color': 'white',
+
+    });
+      $(this).html("Answered");
+});
+</script>
+
+  </body>
+</html>
